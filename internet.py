@@ -18,8 +18,6 @@ data = response.json()
 # --- EXTRACT TODAY'S 12:00 TEMPERATURE ---
 hourly_times = data["hourly"]["time"]
 hourly_temps = data["hourly"]["temperature_2m"]
-
-# Find today's date in format YYYY-MM-DD
 today_str = datetime.now().strftime("%Y-%m-%d")
 target_hour = f"{today_str}T12:00"
 
@@ -28,7 +26,6 @@ if target_hour in hourly_times:
     temp = hourly_temps[index]
     timestamp = target_hour
 else:
-    # Fallback: just use the most recent available hour
     temp = hourly_temps[-1]
     timestamp = hourly_times[-1]
 
