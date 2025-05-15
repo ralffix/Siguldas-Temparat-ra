@@ -12,7 +12,7 @@ def log_temperature():
         # --- CONFIG ---
         LAT = 57.153
         LON = 24.861
-        SHEET_NAME = "SiguldaTemperature"
+        SHEET_NAME = "Siguldas temparatūra"
         SERVICE_ACCOUNT_FILE = "creds.json"
         TIMEZONE = "Europe/Riga"
 
