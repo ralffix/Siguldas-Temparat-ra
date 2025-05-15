@@ -1,1 +1,0 @@
-# Siguldas-Temparat-ra
